@@ -19,7 +19,7 @@ val stomp = StompClient(url, intervalMillis, client)
 stompConnection = stomp.connect().subscribe {
     when (it.type) {
         Event.Type.OPENED -> {
-
+ 
         }
         Event.Type.CLOSED -> {
 
